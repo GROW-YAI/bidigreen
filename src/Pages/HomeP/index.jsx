@@ -5,6 +5,7 @@ import Services from "../../components/HomePage/Services";
 import Team from "../../components/HomePage/Team";
 import Navbar from "../../Shared/Navbar";
 import Footer from "../../Shared/Footer";
+import AboutTeam from "../../components/HomePage/AboutTeam";
 
 const HomePage = () => {
  
@@ -15,7 +16,8 @@ const HomePage = () => {
       
       <Navbar />
       <Hero />
-      <About/>
+      <Services/>
+      <AboutTeam/>
       <Team />
       <Footer />
     </div>
