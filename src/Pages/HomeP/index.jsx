@@ -1,6 +1,5 @@
 
 import Hero from "../../components/HomePage/Hero";
-import About from "../../components/HomePage/About";
 import Services from "../../components/HomePage/Services";
 import Team from "../../components/HomePage/Team";
 import Navbar from "../../Shared/Navbar";
@@ -19,7 +18,8 @@ const HomePage = () => {
       <Services/>
       <AboutTeam/>
       <Team />
-      <Footer />
+      <Footer/>
+      
     </div>
   );
 };

@@ -1,10 +1,9 @@
 
-
-
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import menu from "../assets/SVG/menu.svg"
+import fire from "../assets/images/fire.jpg"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +46,8 @@ const Navbar = () => {
       <div className="flex items-center justify-between h-16 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Logo */}
         <div className="text-xl font-bold text-green-600">
-          <NavLink to="/">BidiGreen</NavLink>
+          <NavLink to="/" className="py-2">BidiGreen</NavLink>
+         
         </div>
 
         {/* Menu Icon for Mobile */}
