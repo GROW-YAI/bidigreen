@@ -39,7 +39,7 @@ style={{ backgroundColor: bgcolor }}
         href="tel:+1234567890"
         className="text-green-400 hover:underline"
       >
-        +1 (234) 567-890
+         +233 302-651946
       </a>
     </p>
   </div>

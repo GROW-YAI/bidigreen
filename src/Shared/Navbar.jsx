@@ -1,14 +1,12 @@
-
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
-import menu from "../assets/SVG/menu.svg"
-import fire from "../assets/images/fire.jpg"
+import menu from "../assets/SVG/menu.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolling, setScrolling] = useState(false);  // Track scroll position
-  
+  const [scrolling, setScrolling] = useState(false); // Track scroll position
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -19,11 +17,11 @@ const Navbar = () => {
     { path: "/contact", label: "Contact Us" },
   ];
 
-
   // Detect scroll to change navbar background
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) { // If scrolled down more than 50px
+      if (window.scrollY > 50) {
+        // If scrolled down more than 50px
         setScrolling(true);
       } else {
         setScrolling(false);
@@ -44,13 +42,13 @@ const Navbar = () => {
       } backdrop-blur-sm`}
     >
       <div className="flex items-center justify-between h-16 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        {/* Logo */}
+      
         <div className="text-xl font-bold text-green-600">
-          <NavLink to="/" className="py-2">BidiGreen</NavLink>
-         
+          <NavLink to="/" className="py-2">
+            BidiGreen
+          </NavLink>
         </div>
 
-        {/* Menu Icon for Mobile */}
         <button
           className="block md:hidden focus:outline-none"
           onClick={toggleMenu}
@@ -58,7 +56,6 @@ const Navbar = () => {
           <img src={menu} alt="Menu Icon" className="w-6 h-6" />
         </button>
 
-        {/* Navigation Links */}
         <nav
           className={`${
             isOpen ? "block" : "hidden"
