@@ -12,7 +12,6 @@ const About = () => {
         style={{ backgroundImage: `url(${greenP})` }}
       >
         <div className="absolute  inset-0 flex flex-col items-center justify-center text-center px-4 ">
-          {/* <li >About Us</li> */}
           <h2 className="text-4xl font-extrabold text-white py-5">
             Welcome to Bidigreen Ghana Limited
           </h2>
@@ -22,7 +21,6 @@ const About = () => {
         </div>
       </div>
       <div className="flex flex-col-reverse items-center md:flex-row py-10 px-6 md:px-16 gap-8">
-        {/* Text Section */}
         <div className="md:w-1/2 top-36">
           <h1 className="text-2xl font-bold mb-4 underline text-green-500">
             About Us
@@ -154,7 +152,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Image Section */}
         <div className="md:w-1/2 flex justify-center">
           <img
             src={about}

@@ -40,6 +40,10 @@ style={{ backgroundColor: bgcolor }}
         className="text-green-400 hover:underline"
       >
           +233 553-396566
+          <br />
+          +233 506-075866
+          <br />
+          +233 541-655694
       </a>
     </p>
   </div>
