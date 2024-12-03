@@ -7,8 +7,8 @@ import { useNavigate } from "react-router-dom";
 const Hero = () => {
   const navigate = useNavigate()
   const texts = [
-    "PRODUCERS OF BIDIGREEN" ,
-    "SMOKELESS CHARCOAL",
+    "BIDIGREEN SMOKELESS CHARCOAL!!!!" ,
+  
     "Turning crop waste into clean energy",
   ];
 

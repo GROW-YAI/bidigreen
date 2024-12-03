@@ -19,32 +19,32 @@ const Footer = ({  bgcolor }) => {
 className={`w-full px-6 py-8 bg-gray-800 text-white backdrop-blur-md`}
 style={{ backgroundColor: bgcolor }}
 >
-{/* Top Section */}
+
 <div className="flex flex-col items-center justify-between gap-6 mb-8 md:flex-row">
-  {/* Contact Info */}
+  
   <div className="text-center md:text-left">
     <h4 className="mb-2 text-xl font-semibold">Contact Us</h4>
     <p>
-      Email:{" "}
+      Email:
       <a
         href="mailto:info@cropcircle.com"
         className="text-green-400 hover:underline"
       >
-        info@bidigreen.com
+              bidigreenghanalimited@gmail.com
       </a>
     </p>
     <p>
-      Phone:{" "}
+      Phone:
       <a
         href="tel:+1234567890"
         className="text-green-400 hover:underline"
       >
-         +233 302-651946
+          +233 553-396566
       </a>
     </p>
   </div>
 
-  {/* Quick Links */}
+
   <div className="text-center md:text-left">
     <h4 className="mb-2 text-xl font-semibold">Quick Links</h4>
     <ul className="flex flex-col gap-4 md:flex-row">

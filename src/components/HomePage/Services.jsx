@@ -25,11 +25,7 @@ const TextSection = () => {
         Quality Products
       </h1>
       <p className="mb-6 text-sm leading-relaxed text-gray-700 md:text-lg">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur.
+      At Bidigreen Ghana Limited, we are transforming the way charcoal is produced and consumed. As a forward-thinking company rooted in sustainability and innovation, we specialize in producing high-quality charcoal from agro-waste materials such as coconut shells, palm kernel shells, sawdust, and more. Our mission is to deliver environmentally responsible solutions to meet the growing energy needs of local and international communities while promoting a greener planet.
       </p>
       <NavLink
         to="/about"

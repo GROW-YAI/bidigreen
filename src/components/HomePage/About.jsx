@@ -1,16 +1,21 @@
-import React from 'react'
+import plant from "../../assets/images/plant.jpg";
+import Navbar from "../../Shared/Navbar";
 
 const About = () => {
   return (
     <div>
-  <div>
-    <h1>ABOUT US</h1>
-    <h2>Who We Are</h2>
-    <p>We're a Green energy company that produces sustainable and eco-friendly Charcoal from agricultural waste such as Coconut shell, Palm kernel shells, rice husk and sawdust for heating and cooling purposes</p>
-  </div>
-
+      <Navbar />
+      <div
+        className="relative bg-cover bg-center h-60"
+        style={{ backgroundImage: `url(${plant})` }}
+      >
+    
+        <div className="absolute  inset-0 flex flex-col items-center justify-center text-center px-4 ">
+          <li className="text-3xl font-bold text-white underline py-5">About Us</li>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

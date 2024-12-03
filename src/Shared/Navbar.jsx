@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import menu from "../assets/SVG/menu.svg";
+import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +46,7 @@ const Navbar = () => {
       
         <div className="text-xl font-bold text-green-600">
           <NavLink to="/" className="py-2">
-            BidiGreen
+            <img src={logo} alt="logo"  width="20%" />
           </NavLink>
         </div>
 
