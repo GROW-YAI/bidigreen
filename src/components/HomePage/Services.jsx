@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react';
-import { NavLink } from 'react-router-dom';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import charcoal from "../../assets/images/charcoal.jpg"
+import React, { useEffect, useRef } from "react";
+import { NavLink } from "react-router-dom";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import charcoal from "../../assets/images/charcoal.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -25,7 +25,13 @@ const TextSection = () => {
         Quality Products
       </h1>
       <p className="mb-6 text-sm leading-relaxed text-gray-700 md:text-lg">
-      At Bidigreen Ghana Limited, we are transforming the way charcoal is produced and consumed. As a forward-thinking company rooted in sustainability and innovation, we specialize in producing high-quality charcoal from agro-waste materials such as coconut shells, palm kernel shells, sawdust, and more. Our mission is to deliver environmentally responsible solutions to meet the growing energy needs of local and international communities while promoting a greener planet.
+        At Bidigreen Ghana Limited, we are transforming the way charcoal is
+        produced and consumed. As a forward-thinking company rooted in
+        sustainability and innovation, we specialize in producing high-quality
+        charcoal from agro-waste materials such as coconut shells, palm kernel
+        shells, sawdust, and more. Our mission is to deliver environmentally
+        responsible solutions to meet the growing energy needs of local and
+        international communities while promoting a greener planet.
       </p>
       <NavLink
         to="/about"
@@ -50,11 +56,11 @@ const Services = () => {
         x: 0,
         duration: 1.2,
         delay: 0.2,
-        ease: 'power3.out',
+        ease: "power3.out",
         scrollTrigger: {
           trigger: textRef.current,
-          start: 'top 85%',
-          toggleActions: 'play none none none',
+          start: "top 85%",
+          toggleActions: "play none none none",
         },
       }
     );
@@ -66,11 +72,11 @@ const Services = () => {
         opacity: 1,
         x: 0,
         duration: 1.2,
-        ease: 'power3.out',
+        ease: "power3.out",
         scrollTrigger: {
           trigger: imageRef.current,
-          start: 'top 85%',
-          toggleActions: 'play none none none',
+          start: "top 85%",
+          toggleActions: "play none none none",
         },
       }
     );
@@ -78,19 +84,13 @@ const Services = () => {
 
   return (
     <div className="flex flex-col items-center justify-between w-full min-h-screen px-4 py-8 md:flex-row md:px-8 bg-gray-50">
-      {/* Text Section */}
-      <div
-        ref={textRef}
-        className="flex justify-center w-full md:w-1/2"
-      >
+  
+      <div ref={textRef} className="flex justify-center w-full md:w-1/2">
         <TextSection />
       </div>
 
-      {/* Image Section */}
-      <div
-        ref={imageRef}
-        className="flex justify-center w-full md:w-1/2"
-      >
+    
+      <div ref={imageRef} className="flex justify-center w-full md:w-1/2">
         <ImageSection />
       </div>
     </div>

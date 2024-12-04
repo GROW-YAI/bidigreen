@@ -1,16 +1,20 @@
 import TeamMembers from "../../utils/constant";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css"; 
-import "swiper/css/autoplay"; 
-import { Autoplay } from "swiper/modules"; 
+import "swiper/css";
+import "swiper/css/autoplay";
+import { Autoplay } from "swiper/modules";
 
 const Team = () => {
   return (
     <div className="px-4 py-8 lg:px-16">
       {/* Header Section */}
       <div className="flex flex-col justify-center items-center mb-8">
-        <h1 className="text-3xl font-bold text-center md:text-4xl lg:text-5xl">OUR TEAM</h1>
-        <h3 className="text-lg text-green-500 mt-2 md:text-xl">Our Production Team</h3>
+        <h1 className="text-3xl font-bold text-center md:text-4xl lg:text-5xl">
+          OUR TEAM
+        </h1>
+        <h3 className="text-lg text-green-500 mt-2 md:text-xl">
+          Our Production Team
+        </h3>
       </div>
 
       {/* Swiper Slider */}
@@ -32,7 +36,11 @@ const Team = () => {
         {TeamMembers.map((team, index) => (
           <SwiperSlide key={index}>
             <div className="relative max-w-xs mx-auto group">
-              <img src={team.image} alt="team image" className="w-full rounded-md shadow-md" />
+              <img
+                src={team.image}
+                alt="team image"
+                className="w-full rounded-md shadow-md"
+              />
               <div
                 className="absolute bottom-0 left-0 w-full bg-white bg-opacity-80 p-2 text-center 
                            transition-colors duration-300 ease-in-out group-hover:bg-green-500 rounded-b-md"

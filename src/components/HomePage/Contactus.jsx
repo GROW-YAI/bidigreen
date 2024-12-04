@@ -8,9 +8,10 @@ const ContactUs = () => {
     <div>
       <Navbar />
       <div className="flex flex-col md:flex-row py-16 items-center md:items-start gap-8 px-4 md:px-16">
-       
         <div className="w-full md:w-1/2 rounded-md py-14 ">
-          <h1 className="text-3xl font-semibold py-5  underline">Partner with Us Today</h1>
+          <h1 className="text-3xl font-semibold py-5  underline">
+            Partner with Us Today
+          </h1>
           <p className="mb-6 text-sm leading-relaxed  text-gray-700 md:text-lg">
             Bidigreen Ghana Limited invites you to be part of our journey toward
             a greener future. Whether you are a business looking for sustainable
@@ -71,8 +72,8 @@ const ContactUs = () => {
           <div>
             <h2 className="text-lg md:text-xl font-semibold">Locate Us:</h2>
             <p className="text-sm md:text-base">
-            Plot, No. 76, Blk A.
-            , <br /> Yaw Nkrumah - Ashanti <br /> AE-0664-8910
+              Plot, No. 76, Blk A. , <br /> Yaw Nkrumah - Ashanti <br />{" "}
+              AE-0664-8910
             </p>
           </div>
         </div>
@@ -99,7 +100,9 @@ const ContactUs = () => {
           </div>
           <div>
             <h2 className="text-lg md:text-xl font-semibold">Email:</h2>
-            <p className="text-sm md:text-base">bidigreenghanalimited@gmail.com</p>
+            <p className="text-sm md:text-base">
+              bidigreenghanalimited@gmail.com
+            </p>
           </div>
         </div>
       </div>

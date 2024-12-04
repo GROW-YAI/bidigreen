@@ -43,10 +43,9 @@ const Navbar = () => {
       } backdrop-blur-sm`}
     >
       <div className="flex items-center justify-between h-16 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      
         <div className="text-xl font-bold text-green-600">
           <NavLink to="/" className="py-2">
-            <img src={logo} alt="logo"  width="20%" />
+            <img src={logo} alt="logo" width="20%" />
           </NavLink>
         </div>
 
@@ -79,15 +78,6 @@ const Navbar = () => {
       </div>
     </header>
   );
-};
-
-Navbar.propTypes = {
-  navLinks: PropTypes.arrayOf(
-    PropTypes.shape({
-      path: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-    })
-  ).isRequired,
 };
 
 export default Navbar;

@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// import { NavLink } from 'react-router-dom';
 import img2 from '../../assets/images/img2.jpg';
 import SDG7 from "../../assets/images/SDG7.png";
 import SDG8 from "../../assets/images/SDG8.png";
@@ -39,12 +38,7 @@ const TextSection = () => {
         <img src={SDG13} alt="" width="15%" />
         <img src={SDG15} alt="" width="15%" />
       </div>
-      {/* <NavLink
-        to=""
-        className="px-6 py-2 text-sm font-bold text-white transition duration-300 bg-green-600 rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 md:text-base"
-      >
-        Meet Team
-      </NavLink> */}
+     
     </div>
   );
 };
