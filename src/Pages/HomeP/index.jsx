@@ -5,6 +5,7 @@ import Team from "../../components/HomePage/Team";
 import Navbar from "../../Shared/Navbar";
 import Footer from "../../Shared/Footer";
 import AboutTeam from "../../components/HomePage/AboutTeam";
+import Products from "../../components/HomePage/Products";
 
 const HomePage = () => {
  
@@ -16,6 +17,7 @@ const HomePage = () => {
       <Navbar />
       <Hero />
       <Services/>
+      <Products/>
       <AboutTeam/>
       <Team />
       <Footer/>

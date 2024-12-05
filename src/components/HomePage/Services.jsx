@@ -23,9 +23,9 @@ const ImageSection = () => {
 const TextSection = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full px-4 text-center md:px-8 md:text-left">
-      <h1 className="mb-4 text-3xl font-bold text-green-800 md:text-4xl">
+      <h2 className="mb-4 text-3xl font-bold underline text-green-800 md:text-4xl">
         Quality Products
-      </h1>
+      </h2>
       <p className="mb-6 text-sm leading-relaxed text-gray-700 md:text-lg">
         At Bidigreen Ghana Limited, we are transforming the way charcoal is
         produced and consumed. As a forward-thinking company rooted in

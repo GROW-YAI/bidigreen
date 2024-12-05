@@ -1,16 +1,43 @@
+import pellet from "../../assets/images/pellet.jpg";
+import sbriquette from "../../assets/images/sbriquette.jpg";
+import cubes from "../../assets/images/cubes.jpg";
+import cstalk from "../../assets/images/cstalk.jpg";
 import TeamMembers from "../../utils/constant";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 
-const Team = () => {
+const Products = () => {
+
+    const ProductItems = [
+        {
+            image: pellet,
+            name: "Bidigreen Pellets",
+            title: "Made from Coconut Shells /Palm Kernels"
+        },
+        {
+            image: sbriquette,
+            name: "Bidigreen Sawdust Briquette",
+            title: "Made from Sawdust"
+        },
+        {
+            image:  cubes,
+            name: "Bidigreen Charcoal Cubes",
+            title: "Made from Coconut Shells /Palm Kernels"
+        },
+        {
+            image: cstalk,
+            name: "Bidigreen Charcoal Stalks",
+            title: "Made from Coconut Shells /Palm Kernels"
+        },
+    ]
   return (
     <div className="px-4 py-8 lg:px-16">
       {/* Header Section */}
       <div className="flex flex-col justify-center items-center mb-8">
-        <h2 className="text-3xl text-green-800 underline font-bold text-center md:text-4xl lg:text-5xl">
-          Meet The Team
+        <h2 className=" font-bold text-center text-green-800 underline md:text-lg lg:text-5xl">
+          Our Products
         </h2>
       
       </div>
@@ -31,7 +58,7 @@ const Team = () => {
         }}
         className="w-full"
       >
-        {TeamMembers.map((team, index) => (
+        {ProductItems.map((team, index) => (
           <SwiperSlide key={index}>
             <div className="relative max-w-xs mx-auto group">
               <img
@@ -58,4 +85,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default Products;
