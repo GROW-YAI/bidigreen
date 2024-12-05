@@ -1,18 +1,45 @@
 import { Mail, MapPinHouse, PhoneCall } from "lucide-react";
-import womancall from "../../assets/images/womancall.jpg";
+import { useRef } from "react";
+import emailjs from "emailjs-com";
 import Footer from "../../Shared/Footer";
 import Navbar from "../../Shared/Navbar";
 
 const ContactUs = () => {
+  const formRef = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_jaj2gr2", 
+        "template_oabaojm", 
+        formRef.current,
+        "So4G5NE49PJeSK3-B" 
+      )
+      .then(
+        (result) => {
+          console.log("Email successfully sent:", result.text);
+          alert("Message sent successfully!");
+        },
+        (error) => {
+          console.error("Error sending email:", error.text);
+          alert("Failed to send message. Please try again.");
+        }
+      );
+
+    e.target.reset(); // Reset the form after submission
+  };
+
   return (
     <div>
       <Navbar />
       <div className="flex flex-col md:flex-row py-16 items-center md:items-start gap-8 px-4 md:px-16">
-        <div className="w-full md:w-1/2 rounded-md py-14 ">
-          <h1 className="text-3xl font-semibold py-5  underline">
+        <div className="w-full md:w-1/2 rounded-md py-14">
+          <h1 className="text-3xl font-semibold py-5 underline">
             Partner with Us Today
           </h1>
-          <p className="mb-6 text-sm leading-relaxed  text-gray-700 md:text-lg">
+          <p className="mb-6 text-sm leading-relaxed text-gray-700 md:text-lg">
             Bidigreen Ghana Limited invites you to be part of our journey toward
             a greener future. Whether you are a business looking for sustainable
             charcoal solutions or an advocate for environmental change, we are
@@ -24,34 +51,41 @@ const ContactUs = () => {
 
         <div className="w-full md:w-1/2">
           <div className="px-4 md:px-14 py-4">
-            <h1 className="font-bold text-2xl md:text-3xl py-2">
-              Get in touch
-            </h1>
+            <h1 className="font-bold text-2xl md:text-3xl py-2">Get in touch</h1>
             <p>Send us a message.</p>
           </div>
 
           <div className="px-4 md:px-14">
-            <form action="" className="flex flex-col gap-4">
+            <form
+              ref={formRef}
+              onSubmit={sendEmail}
+              className="flex flex-col gap-4"
+            >
               <input
                 type="text"
+                name="user_name"
                 placeholder="Your Full Name"
                 className="h-12 rounded px-5 outline-none border w-full"
+                required
               />
               <input
                 type="email"
-                name="email"
+                name="user_email"
                 placeholder="Email"
                 className="h-12 rounded px-5 outline-none border w-full"
+                required
               />
               <input
                 type="text"
+                name="user_phone"
                 placeholder="Phone number"
                 className="h-12 rounded px-5 outline-none border w-full"
               />
               <textarea
-                name="message"
+                name="user_message"
                 placeholder="Message..."
                 className="h-28 rounded px-5 py-3 outline-none border w-full"
+                required
               ></textarea>
               <button
                 type="submit"
