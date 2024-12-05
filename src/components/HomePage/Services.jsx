@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import charcoal from "../../assets/images/charcoal.jpg";
+import bidie from "../../assets/images/bidie.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,6 +15,7 @@ const ImageSection = () => {
         alt="Produce"
         className="object-cover w-full h-auto rounded-lg shadow-lg"
       />
+      
     </div>
   );
 };

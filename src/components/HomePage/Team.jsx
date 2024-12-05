@@ -12,9 +12,7 @@ const Team = () => {
         <h1 className="text-3xl font-bold text-center md:text-4xl lg:text-5xl">
           OUR TEAM
         </h1>
-        <h3 className="text-lg text-green-500 mt-2 md:text-xl">
-          Our Production Team
-        </h3>
+      
       </div>
 
       {/* Swiper Slider */}
