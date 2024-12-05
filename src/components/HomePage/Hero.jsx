@@ -32,7 +32,7 @@ const Hero = () => {
 
   return (
     <div
-      className="relative w-full bg-cover bg-center h-screen"
+      className="relative w-full bg-cover bg-center h-96"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div
