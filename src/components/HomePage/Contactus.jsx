@@ -117,13 +117,17 @@ const ContactUs = () => {
             <PhoneCall />
           </div>
           <div>
-            <h2 className="text-lg md:text-xl font-semibold">Call Us:</h2>
-            <p className="text-sm md:text-base">
-              +233 541-655694
+            
+            <h2 className="text-lg md:text-xl font-semibold">  Call Us:</h2>
+
+            <p className="text-sm  md:text-base">
+           <a href="tel:+233541655694" target="_blank" >  +233 541-655694</a> 
               <br />
-              +233 506-075866
+               <a href="tel:+233506075866" target="_blank" >+233 506-075866</a>
+              
               <br />
-              +233 553-396566
+               <a href="tel:+233553396566" target="_blank" >+233 553-396566</a>
+              
             </p>
           </div>
         </div>
@@ -134,9 +138,10 @@ const ContactUs = () => {
           </div>
           <div>
             <h2 className="text-lg md:text-xl font-semibold">Email:</h2>
-            <p className="text-sm md:text-base">
+            <a className="text-sm md:text-base"href="mailto:bidigreenghanalimited@gmail.com">
               bidigreenghanalimited@gmail.com
-            </p>
+            </a>
+            
           </div>
         </div>
       </div>

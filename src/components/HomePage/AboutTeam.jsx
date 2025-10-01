@@ -84,26 +84,32 @@ const AboutTeam = () => {
   }, []);
 
   return (
+   <div id="AboutTeam" className="w-full overflow-x-hidden bg-gray-50">
+  <div className="max-w-7xl mx-auto flex flex-col items-center justify-center min-h-auto px-4 py-8 md:flex-row md:h-screen md:px-8 box-border">
+    {/* Image Section */}
     <div
-      id="AboutTeam"
-      className="flex flex-col items-center justify-center w-full h-auto px-4 py-8 md:flex-row md:h-screen md:px-8"
+      ref={imageWrapperRef}
+      className="flex items-center justify-center w-full md:flex-1 md:max-w-1/2 mb-6 md:mb-0 min-w-0 box-border overflow-hidden"
+      aria-hidden="false"
     >
-      {/* Image Section */}
-      <div
-        ref={imageWrapperRef}
-        className="flex items-center justify-center w-full mb-6 md:w-1/2 md:mb-0"
-      >
+      {/* extra wrapper protects against inside elements growing */}
+      <div className="w-full max-w-full">
         <ImageSection />
       </div>
+    </div>
 
-      {/* Text Section */}
-      <div
-        ref={textWrapperRef}
-        className="flex items-center justify-center w-full md:w-1/2"
-      >
+    {/* Text Section */}
+    <div
+      ref={textWrapperRef}
+      className="flex items-center justify-center w-full md:flex-1 md:max-w-1/2 min-w-0 box-border"
+    >
+      <div className="w-full break-words">
         <TextSection />
       </div>
     </div>
+  </div>
+</div>
+
   );
 };
 
