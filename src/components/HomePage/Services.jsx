@@ -85,17 +85,17 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-between w-full min-h-screen px-4 py-8 md:flex-row md:px-8 bg-gray-50">
-  
-      <div ref={textRef} className="flex justify-center w-full md:w-1/2">
-        <TextSection />
-      </div>
-
-    
-      <div ref={imageRef} className="flex justify-center w-full md:w-1/2">
-        <ImageSection />
-      </div>
+  <div className="bg-gray-50">
+  <div className="flex flex-col items-center justify-between min-h-screen px-4 py-8 md:flex-row md:px-8 max-w-7xl mx-auto">
+    <div ref={textRef} className="flex justify-center w-[80%] md:w-1/2 min-w-0">
+      <TextSection />
     </div>
+    <div ref={imageRef} className="flex justify-center w-[80%] md:w-1/2 min-w-0">
+      <ImageSection />
+    </div>
+  </div>
+</div>
+
   );
 };
 

@@ -64,7 +64,7 @@ const Products = () => {
               <img
                 src={team.image}
                 alt="team image"
-                className="w-full rounded-md shadow-md"
+                className="w-full h-80 rounded-md shadow-md"
               />
               <div
                 className="absolute bottom-0 left-0 w-full bg-white bg-opacity-80 p-2 text-center 

@@ -32,7 +32,7 @@ const Hero = () => {
 
   return (
     <div
-      className="relative w-full bg-cover bg-center h-96"
+      className="relative w-full bg-cover bg-no-repeat bg-center min-h-screen"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div
@@ -41,7 +41,7 @@ const Hero = () => {
       ></div>
 
       {/* Overlay Content */}
-      <div className=" absolute  inset-0 flex flex-col items-center justify-center text-center px-4 ">
+      <div className="absolute  inset-0 flex flex-col items-center justify-center text-center px-4 ">
         <div className="text-white">
           {texts.map((text, index) => (
             <div
