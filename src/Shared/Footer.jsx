@@ -55,30 +55,30 @@ const Footer = ({ bgcolor }) => {
           <ul className="space-y-2">
             <li>
               <Link
-                to="/privacy-policy"
+                to="/"
                 className="text-green-400 hover:underline"
               >
-                Privacy Policy
+               Home
               </Link>
             </li>
             <li>
               <Link
-                to="/terms-conditions"
+                to="/about"
                 className="text-green-400 hover:underline"
               >
-                Terms and Conditions
+                About
               </Link>
             </li>
             <li>
-              <Link to="/help" className="text-green-400 hover:underline">
-                Help
+              <Link to="/contact" className="text-green-400 hover:underline">
+               Contact
               </Link>
             </li>
-            <li>
-              <Link to="/faq" className="text-green-400 hover:underline">
-                FAQ
+            {/* <li>
+              <Link to="/services" className="text-green-400 hover:underline">
+                Services
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
