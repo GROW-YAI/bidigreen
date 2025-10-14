@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import menu from "../assets/SVG/menu.svg";
 import logo from "../assets/images/logo.png";
@@ -44,9 +44,9 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between h-16 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="text-xl font-bold text-green-600">
-          <NavLink to="/" className="py-2">
+          <Link to="/" className="py-2">
             <img src={logo} alt="logo" width="20%" />
-          </NavLink>
+          </Link>
         </div>
 
         <button
@@ -64,13 +64,13 @@ const Navbar = () => {
           <ul className="flex flex-col items-center gap-6 p-4 md:flex-row md:gap-8 md:p-0">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink
+                <Link
                   to={link.path}
                   className="text-lg font-medium text-gray-700 transition duration-200 hover:text-green-600"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
-                </NavLink>
+                </Link>
               </li>
             ))}
           </ul>

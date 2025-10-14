@@ -1,13 +1,10 @@
-import greenP from "../../assets/images/greenP.jpg";
-import bidi from "../../assets/images/bidi.jpg";
-import bidipac from "../../assets/images/bidipac.jpg";
-import Navbar from "../../Shared/Navbar";
-import Footer from "../../Shared/Footer";
+import greenP from "../assets/images/greenP.jpg";
+import bidi from "../assets/images/bidi.jpg";
+import bidipac from "../assets/images/bidipac.jpg";
 
 const About = () => {
   return (
     <div>
-      <Navbar />
       <div
         className="relative bg-cover bg-center h-60"
         style={{ backgroundImage: `url(${greenP})` }}
@@ -155,8 +152,6 @@ const About = () => {
           />
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

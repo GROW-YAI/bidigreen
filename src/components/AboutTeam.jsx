@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import img2 from '../../assets/images/img2.jpg';
-import SDG7 from "../../assets/images/SDG7.png";
-import SDG8 from "../../assets/images/SDG8.png";
-import SDG13 from "../../assets/images/SDG13.png";
-import SDG15 from "../../assets/images/SDG15.png";
+import img2 from '../assets/images/img2.jpg';
+import SDG7 from "../assets/images/SDG7.png";
+import SDG8 from "../assets/images/SDG8.png";
+import SDG13 from "../assets/images/SDG13.png";
+import SDG15 from "../assets/images/SDG15.png";
 
 
 gsap.registerPlugin(ScrollTrigger);

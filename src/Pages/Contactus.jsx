@@ -1,8 +1,7 @@
 import { Mail, MapPinHouse, PhoneCall } from "lucide-react";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
-import Footer from "../../Shared/Footer";
-import Navbar from "../../Shared/Navbar";
+
 
 const ContactUs = () => {
   const formRef = useRef();
@@ -12,10 +11,10 @@ const ContactUs = () => {
 
     emailjs
       .sendForm(
-        "service_jaj2gr2", 
-        "template_oabaojm", 
+        "service_jaj2gr2",
+        "template_oabaojm",
         formRef.current,
-        "So4G5NE49PJeSK3-B" 
+        "So4G5NE49PJeSK3-B"
       )
       .then(
         (result) => {
@@ -33,7 +32,6 @@ const ContactUs = () => {
 
   return (
     <div>
-      <Navbar />
       <div className="flex flex-col md:flex-row py-16 items-center md:items-start gap-8 px-4 md:px-16">
         <div className="w-full md:w-1/2 rounded-md py-14">
           <h1 className="text-3xl font-semibold py-5 underline">
@@ -51,7 +49,9 @@ const ContactUs = () => {
 
         <div className="w-full md:w-1/2">
           <div className="px-4 md:px-14 py-4">
-            <h1 className="font-bold text-2xl md:text-3xl py-2">Get in touch</h1>
+            <h1 className="font-bold text-2xl md:text-3xl py-2">
+              Get in touch
+            </h1>
             <p>Send us a message.</p>
           </div>
 
@@ -117,17 +117,22 @@ const ContactUs = () => {
             <PhoneCall />
           </div>
           <div>
-            
-            <h2 className="text-lg md:text-xl font-semibold">  Call Us:</h2>
+            <h2 className="text-lg md:text-xl font-semibold"> Call Us:</h2>
 
             <p className="text-sm  md:text-base">
-           <a href="tel:+233541655694" target="_blank" >  +233 541-655694</a> 
+              <a href="tel:+233541655694" target="_blank">
+                {" "}
+                +233 541-655694
+              </a>
               <br />
-               <a href="tel:+233506075866" target="_blank" >+233 506-075866</a>
-              
+              <a href="tel:+233506075866" target="_blank">
+                +233 506-075866
+              </a>
+
               <br />
-               <a href="tel:+233553396566" target="_blank" >+233 553-396566</a>
-              
+              <a href="tel:+233553396566" target="_blank">
+                +233 553-396566
+              </a>
             </p>
           </div>
         </div>
@@ -138,15 +143,15 @@ const ContactUs = () => {
           </div>
           <div>
             <h2 className="text-lg md:text-xl font-semibold">Email:</h2>
-            <a className="text-sm md:text-base"href="mailto:bidigreenghanalimited@gmail.com">
+            <a
+              className="text-sm md:text-base"
+              href="mailto:bidigreenghanalimited@gmail.com"
+            >
               bidigreenghanalimited@gmail.com
             </a>
-            
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

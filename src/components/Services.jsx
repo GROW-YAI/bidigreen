@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import charcoal from "../../assets/images/charcoal.jpg";
+import charcoal from "../assets/images/charcoal.jpg";
 
 
 gsap.registerPlugin(ScrollTrigger);
