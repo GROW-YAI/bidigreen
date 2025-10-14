@@ -1,4 +1,4 @@
-import backgroundImage from "../../assets/images/backgroundImage.jpg";
+import backgroundImage from "../assets/images/backgroundImage.jpg";
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useNavigate } from "react-router-dom";
