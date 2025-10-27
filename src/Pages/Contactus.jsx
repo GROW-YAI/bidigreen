@@ -98,7 +98,7 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div className="px-4 md:px-10 flex flex-col md:flex-row md:justify-between gap-6 md:gap-10">
+      {/* <div className="px-4 md:px-10 flex flex-col md:flex-row md:justify-between gap-6 md:gap-10">
         <div className="flex items-center gap-4 pb-6 md:pb-0">
           <div className="flex items-center justify-center border h-16 w-16 rounded-full bg-green-500 text-white">
             <MapPinHouse />
@@ -151,7 +151,7 @@ const ContactUs = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

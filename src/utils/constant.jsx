@@ -18,11 +18,6 @@ const TeamMembers = [
     title: "Sales Head"
 },
 
-{
-    image: jenny,
-    name: "Jennifer Kwakwa-Sarpong",
-    title: "CEO-Marketing Head"
-},
 
 {
     image: emma,
