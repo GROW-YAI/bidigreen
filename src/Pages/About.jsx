@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div>
       <div
-        className="relative bg-cover bg-center h-60"
+        className="relative w-full bg-cover bg-no-repeat bg-center min-h-screen"
         style={{ backgroundImage: `url(${greenP})` }}
       >
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
